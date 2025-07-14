@@ -8,7 +8,7 @@ function App() {
   const base = import.meta.env.DEV ? '/' : '/Portfolio'; // 🔄 smart basename
 
   return (
-    <Router basename={base}>
+    <Router basename="/Portfolio">
       <Routes>
         <Route path="/" element={<Header />} />
         <Route path="/contact" element={<Contact />} />
