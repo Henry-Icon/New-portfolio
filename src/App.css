@@ -1,0 +1,125 @@
+.header-container {
+  padding: 60px 30px;
+  text-align: center;
+  color: #f1f5f9;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  border-radius: 24px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header-container h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-container span {
+  background: linear-gradient(135deg, #3bace2, #b936ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-container p {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+/* Light Mode */
+body[data-theme='light'] .header-container {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+body[data-theme='light'] .header-container span {
+  background: linear-gradient(135deg, #4f46e5, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body[data-theme='light'] .header-container p {
+  color: #475569;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(236, 72, 153, 0.3);
+}
+
+.primary-btn:hover {
+  background: linear-gradient(135deg, #ec4899, #6366f1);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #f1f5f9;
+  color: #f1f5f9;
+}
+
+.secondary-btn:hover {
+  background-color: #334155;
+  color: #fff;
+  border-color: #334155;
+}
+
+body[data-theme='light'] .secondary-btn {
+  border: 2px solid #1e293b;
+  color: #1e293b;
+}
+
+body[data-theme='light'] .secondary-btn:hover {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-container.animate-header {
+  animation: fadeSlideUp 1s ease-out forwards;
+  opacity: 0; 
+}
+
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .header-container p {
+    font-size: 1.1rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
