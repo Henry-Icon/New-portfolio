@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import 'aos/dist/aos.css';
 import cod3 from './assets/cod3.jpeg';
-import './Body.css';
+import './body.css';
 import './About.css';
 import Contact from "./Email";
 import henry from './assets/henry.jpeg'
