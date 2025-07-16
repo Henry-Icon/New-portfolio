@@ -5,16 +5,13 @@ import Header from './header';
 import Contact from './Email';
 
 function App() {
-  
-
   return (
-   <Router basename="/New-portfolio">
-  <Routes>
-    <Route path="/" element={<Header />} />
-    <Route path="/contact" element={<Contact />} />
-  </Routes>
-</Router>
-
+    <Router> 
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
