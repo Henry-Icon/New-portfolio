@@ -98,6 +98,12 @@ body[data-theme='light'] .about p {
 
   .project img {
     width: 100%;
+    
+  }
+
+  .project {
+  display: flex;
+  flex-direction: column;
   }
 
   .about-flex-text {
