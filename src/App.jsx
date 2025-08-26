@@ -1,5 +1,4 @@
 import './App.css';
-import Body from './body';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './header';
 import Contact from './Email';

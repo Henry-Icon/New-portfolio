@@ -25,9 +25,10 @@ function Header() {
             <a href="#Contact">
               <button className="primary-btn">Contact Me</button>
             </a>
-            <a href="#About">
-              <button className="secondary-btn">View Work</button>
+           <a href="https://github.com/Henry-Icon" target="_blank" rel="noopener noreferrer">
+          <button className="secondary-btn">View Work</button>
             </a>
+
           </div>
         </div>
       </header>
